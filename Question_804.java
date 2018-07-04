@@ -7,8 +7,7 @@ class Solution {
         for(String word : words){
             String moreseCode = "";
             for(char l: word.toCharArray()){
-                int temp = (int)l;
-                moreseCode = moreseCode + morse[temp-97];
+                moreseCode += morse[(int)l-97];
                
             }
             result.add(moreseCode);
